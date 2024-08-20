@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    scroll-behavior: smooth;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 150px;
+    height: 20px;
+    background: radial-gradient(circle closest-side,#000 92%,#0000) calc(100%/3) 0/calc(100%/4) 100%;
+    animation: l2 0.5s infinite linear;
+    margin-bottom: 50px;
+  }
+  @keyframes l2 {
+      100% {background-position: 0 0}
+  }
